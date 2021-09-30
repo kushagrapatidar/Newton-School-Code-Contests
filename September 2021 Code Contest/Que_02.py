@@ -1,14 +1,16 @@
 T=int(input())
-C=[]
+lensubsets=[]
 for i in range(T):
-    C.append(int(input()))
-for N in C:  
+    N=int(input())
     set=[]
-    for _ in range(1,N+1):
-        set.append(_)
+    for _ in range(N):
+        set.append(_+1)
     set.sort()
     subset=[]
     for _ in set:
         if _/2 not in subset:
             subset.append(_)
-    print(len(subset))
+    lensubsets.append(len(subset))
+
+for _ in lensubsets:
+    print(_)
