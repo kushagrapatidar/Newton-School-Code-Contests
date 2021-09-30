@@ -1,6 +1,6 @@
 N=int(input())
 set=[]
-for _ in range(N+1):
+for _ in range(N):
     set.append(int(input()))
 set.sort()
 subset=[]
